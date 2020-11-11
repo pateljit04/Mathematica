@@ -1,0 +1,83 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2232,         75]
+NotebookOptionsPosition[      1756,         58]
+NotebookOutlinePosition[      2155,         74]
+CellTagsIndexPosition[      2112,         71]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"Manipulate", "[", 
+   RowBox[{
+    RowBox[{"List", "[", 
+     RowBox[{
+      FractionBox["9.3814", 
+       SuperscriptBox["R", "2"]], ",", " ", 
+      RowBox[{
+       RowBox[{
+        FractionBox["24", "R"], 
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"0.173", "*", 
+           SuperscriptBox["R", "0.657"]}]}], ")"}]}], "+", 
+       FractionBox["0.413", 
+        RowBox[{"1", "+", 
+         RowBox[{"16300", "*", 
+          SuperscriptBox["R", 
+           RowBox[{"-", "1.09"}]]}]}]]}]}], "]"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"R", ",", "0", ",", "1"}], "}"}]}], "]"}], " "}]], "Input",
+ CellChangeTimes->{{3.812145194626665*^9, 3.8121453577112937`*^9}, {
+  3.812145403363204*^9, 3.812145419722883*^9}, {3.812145481577482*^9, 
+  3.812145528198315*^9}},ExpressionUUID->"aa58a745-f976-4dd9-bb13-\
+afa17ea13007"],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["C", "D"], "\[Equal]", 
+  FractionBox["9.3814`", 
+   SuperscriptBox["R", "2"]]}]], "Output",
+ CellChangeTimes->{3.8121453588217077`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"a5847127-e6e3-47af-8334-c9ae2464d152"]
+}, Open  ]]
+},
+WindowSize->{1366, 685},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"3a4aecd1-547d-44ef-87cf-3aa5c1dd0137"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 904, 25, 65, "Input",ExpressionUUID->"aa58a745-f976-4dd9-bb13-afa17ea13007"],
+Cell[1487, 49, 253, 6, 50, "Output",ExpressionUUID->"a5847127-e6e3-47af-8334-c9ae2464d152"]
+}, Open  ]]
+}
+]
+*)
+

@@ -1,0 +1,142 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4459,        132]
+NotebookOptionsPosition[      3573,        109]
+NotebookOutlinePosition[      3972,        125]
+CellTagsIndexPosition[      3929,        122]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"Log", "[", 
+       RowBox[{
+        RowBox[{"Exp", "[", "1", "]"}], ",", "x"}], "]"}], "-", 
+      RowBox[{"Log", "[", 
+       RowBox[{
+        RowBox[{"Exp", "[", "1", "]"}], ",", 
+        RowBox[{"1", "-", "x"}]}], "]"}], "+", "4", "-", 
+      RowBox[{"8", "x"}]}], "\[Equal]", "0"}], ",", "x"}], "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.813001759615921*^9, 3.813001785642709*^9}},
+ CellLabel->"In[73]:=",ExpressionUUID->"5a00c1c9-ce7f-4052-8aba-ef94dfd8a0c4"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve", "nsmet", 
+   "\"This system cannot be solved with the methods available to Solve.\"", 2,
+    73, 24, 20587489827685410664, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.8130017648739214`*^9, 3.813001787411682*^9}},
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"621c379f-971f-4af4-b60e-de4948038355"],
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"4", "-", 
+     RowBox[{"8", " ", "x"}], "-", 
+     RowBox[{"Log", "[", 
+      RowBox[{"1", "-", "x"}], "]"}], "+", 
+     RowBox[{"Log", "[", "x", "]"}]}], "\[Equal]", "0"}], ",", "x"}], 
+  "]"}]], "Output",
+ CellChangeTimes->{3.8130017874366665`*^9},
+ CellLabel->"Out[73]=",ExpressionUUID->"c7f71f6c-c6a9-4b5c-a547-5bf296dd7100"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"Roots", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"Log", "[", "x", "]"}], "-", 
+      RowBox[{"Log", "[", 
+       RowBox[{"1", "-", "x"}], "]"}], "+", "4", "-", 
+      RowBox[{"8", "x"}]}], "\[Equal]", "0"}], ",", "x"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8130018243141704`*^9, 3.8130018575673046`*^9}},
+ CellLabel->"In[76]:=",ExpressionUUID->"087c3906-4ffa-4ba6-9519-fd13824fc4e6"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Roots", "neq", 
+   "\"\\!\\(\\*RowBox[{\\\"4\\\", \\\"-\\\", RowBox[{\\\"8\\\", \\\" \\\", \\\
+\"x\\\"}], \\\"-\\\", RowBox[{\\\"Log\\\", \\\"[\\\", RowBox[{\\\"1\\\", \
+\\\"-\\\", \\\"x\\\"}], \\\"]\\\"}], \\\"+\\\", RowBox[{\\\"Log\\\", \
+\\\"[\\\", \\\"x\\\", \\\"]\\\"}]}]\\) is expected to be a polynomial in the \
+variable \\!\\(\\*RowBox[{\\\"x\\\"}]\\).\"", 2, 76, 27, 20587489827685410664,
+    "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.8130018363049726`*^9, 3.813001858236719*^9}},
+ CellLabel->
+  "During evaluation of \
+In[76]:=",ExpressionUUID->"1339143d-a9fe-45eb-bc5a-48b2739ee78f"],
+
+Cell[BoxData[
+ RowBox[{"Roots", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"4", "-", 
+     RowBox[{"8", " ", "x"}], "-", 
+     RowBox[{"Log", "[", 
+      RowBox[{"1", "-", "x"}], "]"}], "+", 
+     RowBox[{"Log", "[", "x", "]"}]}], "\[Equal]", "0"}], ",", "x"}], 
+  "]"}]], "Output",
+ CellChangeTimes->{{3.8130018364348974`*^9, 3.813001858286296*^9}},
+ CellLabel->"Out[76]=",ExpressionUUID->"d2dd77a3-76a7-4206-9b5c-dcde9bd800d5"]
+}, Open  ]]
+},
+WindowSize->{1366, 685},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"f0683b97-07a9-4b15-96fc-337d2f9f4a7b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 591, 16, 48, "Input",ExpressionUUID->"5a00c1c9-ce7f-4052-8aba-ef94dfd8a0c4"],
+Cell[1174, 40, 386, 9, 21, "Message",ExpressionUUID->"621c379f-971f-4af4-b60e-de4948038355"],
+Cell[1563, 51, 403, 11, 32, "Output",ExpressionUUID->"c7f71f6c-c6a9-4b5c-a547-5bf296dd7100"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2003, 67, 463, 11, 48, "Input",ExpressionUUID->"087c3906-4ffa-4ba6-9519-fd13824fc4e6"],
+Cell[2469, 80, 658, 13, 23, "Message",ExpressionUUID->"1339143d-a9fe-45eb-bc5a-48b2739ee78f"],
+Cell[3130, 95, 427, 11, 32, "Output",ExpressionUUID->"d2dd77a3-76a7-4206-9b5c-dcde9bd800d5"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

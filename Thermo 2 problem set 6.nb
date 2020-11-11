@@ -1,0 +1,1454 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     64744,       1444]
+NotebookOptionsPosition[     64161,       1426]
+NotebookOutlinePosition[     64560,       1442]
+CellTagsIndexPosition[     64517,       1439]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Clear", "[", 
+    RowBox[{"A", ",", "B", ",", "x1\[Alpha]", ",", "x1\[Beta]"}], "]"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"NSolve", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"A", "-", "B", "-", 
+           RowBox[{"2", " ", "*", "A", " ", "*", "x1\[Alpha]"}], "+", 
+           RowBox[{"6", "*", "B", "*", "x1\[Alpha]"}], "+", 
+           RowBox[{"A", " ", 
+            SuperscriptBox["x1\[Alpha]", "2"]}], "-", 
+           RowBox[{"9", " ", "B", " ", "*", 
+            SuperscriptBox["x1\[Alpha]", "2"]}], "+", 
+           RowBox[{"4", " ", "B", " ", "*", 
+            SuperscriptBox["x1\[Alpha]", "3"]}]}], ")"}], "-", 
+         RowBox[{"(", 
+          RowBox[{"A", "-", "B", "-", 
+           RowBox[{"2", " ", "*", "A", " ", "*", "x1\[Beta]"}], "+", 
+           RowBox[{"6", "*", "B", "*", "x1\[Beta]"}], "+", 
+           RowBox[{"A", " ", 
+            SuperscriptBox["x1\[Beta]", "2"]}], "-", 
+           RowBox[{"9", " ", "B", " ", "*", 
+            SuperscriptBox["x1\[Beta]", "2"]}], "+", 
+           RowBox[{"4", " ", "B", "*", " ", 
+            SuperscriptBox["x1\[Beta]", "3"]}]}], ")"}]}], "\[Equal]", " ", 
+        RowBox[{"Log", "[", 
+         FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["x1\[Alpha]", "2"], "*", 
+           RowBox[{"(", 
+            RowBox[{"A", "-", 
+             RowBox[{"3", "*", "B"}], "+", 
+             RowBox[{"4", "*", "B", "*", "x1\[Alpha]"}]}], ")"}]}], ")"}], 
+         "-", 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["x1\[Beta]", "2"], "*", 
+           RowBox[{"(", 
+            RowBox[{"A", "-", 
+             RowBox[{"3", "*", "B"}], "+", 
+             RowBox[{"4", "*", "B", "*", "x1\[Beta]"}]}], ")"}]}], ")"}]}], 
+        "\[Equal]", " ", 
+        RowBox[{"Log", "[", 
+         FractionBox[
+          RowBox[{"1", "-", "x1\[Alpha]"}], 
+          RowBox[{"1", "-", "x1\[Beta]"}]], "]"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"A", ",", "B"}], "}"}], ",", "Reals"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.8134374211796083`*^9, 3.813437495194555*^9}, {
+   3.813437546565851*^9, 3.81343761758858*^9}, {3.8134376710637918`*^9, 
+   3.8134377037414923`*^9}, 3.813437761255663*^9, {3.813437813008483*^9, 
+   3.8134380460083637`*^9}, {3.813438278659667*^9, 3.8134383208056946`*^9}, {
+   3.8134383516643353`*^9, 3.8134384742975335`*^9}, {3.813438599387293*^9, 
+   3.813438605931282*^9}, {3.8134387204209585`*^9, 3.813438745515969*^9}},
+ CellLabel->"In[22]:=",ExpressionUUID->"37704f2c-8812-4e26-b4bc-957619177d34"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"A", "\[Rule]", 
+     TemplateBox[{
+       FractionBox[
+        RowBox[{
+          RowBox[{"6.`", " ", 
+            RowBox[{"Log", "[", 
+              FractionBox[
+               RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+               RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "-", 
+          RowBox[{"9.`", " ", "x1\[Alpha]", " ", 
+            RowBox[{"Log", "[", 
+              FractionBox[
+               RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+               RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+          RowBox[{"4.`", " ", 
+            SuperscriptBox["x1\[Alpha]", "2"], " ", 
+            RowBox[{"Log", "[", 
+              FractionBox[
+               RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+               RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "-", 
+          RowBox[{"9.`", " ", "x1\[Beta]", " ", 
+            RowBox[{"Log", "[", 
+              FractionBox[
+               RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+               RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+          RowBox[{"4.`", " ", "x1\[Alpha]", " ", "x1\[Beta]", " ", 
+            RowBox[{"Log", "[", 
+              FractionBox[
+               RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+               RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+          RowBox[{"4.`", " ", 
+            SuperscriptBox["x1\[Beta]", "2"], " ", 
+            RowBox[{"Log", "[", 
+              FractionBox[
+               RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+               RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+          RowBox[{"3.`", " ", "x1\[Alpha]", " ", 
+            RowBox[{"Log", "[", 
+              FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+          RowBox[{"4.`", " ", 
+            SuperscriptBox["x1\[Alpha]", "2"], " ", 
+            RowBox[{"Log", "[", 
+              FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "+", 
+          RowBox[{"3.`", " ", "x1\[Beta]", " ", 
+            RowBox[{"Log", "[", 
+              FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+          RowBox[{"4.`", " ", "x1\[Alpha]", " ", "x1\[Beta]", " ", 
+            RowBox[{"Log", "[", 
+              FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+          RowBox[{"4.`", " ", 
+            SuperscriptBox["x1\[Beta]", "2"], " ", 
+            RowBox[{"Log", "[", 
+              FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}]}], 
+        RowBox[{
+          RowBox[{"2.`", " ", 
+            SuperscriptBox["x1\[Alpha]", "3"]}], "-", 
+          RowBox[{"6.`", " ", 
+            SuperscriptBox["x1\[Alpha]", "2"], " ", "x1\[Beta]"}], "+", 
+          RowBox[{"6.`", " ", "x1\[Alpha]", " ", 
+            SuperscriptBox["x1\[Beta]", "2"]}], "-", 
+          RowBox[{"2.`", " ", 
+            SuperscriptBox["x1\[Beta]", "3"]}]}]], 
+       InterpretationBox[
+        DynamicModuleBox[{Typeset`open = False}, 
+         TemplateBox[{"Expression", 
+           StyleBox[
+            TagBox[
+             TooltipBox["\"condition\"", 
+              TagBox[
+               RowBox[{
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"x1\[Alpha]", ">", "1.`"}], "&&", 
+                    RowBox[{"x1\[Beta]", ">", "x1\[Alpha]"}]}], ")"}], "||", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"x1\[Alpha]", ">", "1.`"}], "&&", 
+                    RowBox[{"1.`", "<", "x1\[Beta]", "<", "x1\[Alpha]"}]}], 
+                   ")"}], "||", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"0", "<", "x1\[Alpha]", "\[LessEqual]", "0.25`"}],
+                     "&&", 
+                    RowBox[{"0", "<", "x1\[Beta]", "<", "x1\[Alpha]"}]}], 
+                   ")"}], "||", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"0", "<", "x1\[Alpha]", "\[LessEqual]", "0.25`"}],
+                     "&&", 
+                    RowBox[{"x1\[Alpha]", "<", "x1\[Beta]", "<", "1.`"}]}], 
+                   ")"}], "||", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"0.25`", "<", "x1\[Alpha]", "<", "0.5`"}], "&&", 
+                    RowBox[{"0", "<", "x1\[Beta]", "<", "x1\[Alpha]"}]}], 
+                   ")"}], "||", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"0.25`", "<", "x1\[Alpha]", "<", "0.5`"}], "&&", 
+                    RowBox[{"x1\[Alpha]", "<", "x1\[Beta]", "<", 
+                    RowBox[{
+                    RowBox[{"0.125`", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"9.`", "\[VeryThinSpace]"}], "-", 
+                    RowBox[{"4.`", " ", "x1\[Alpha]"}]}], ")"}]}], "-", 
+                    RowBox[{"0.21650635094610965`", " ", 
+                    SqrtBox[
+                    RowBox[{
+                    RowBox[{"-", "5.`"}], "+", 
+                    RowBox[{"24.`", " ", "x1\[Alpha]"}], "-", 
+                    RowBox[{"16.`", " ", 
+                    SuperscriptBox["x1\[Alpha]", "2"]}]}]]}]}]}]}], ")"}], 
+                 "||", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"0.25`", "<", "x1\[Alpha]", "<", "0.5`"}], "&&", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"0.125`", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"9.`", "\[VeryThinSpace]"}], "-", 
+                    RowBox[{"4.`", " ", "x1\[Alpha]"}]}], ")"}]}], "-", 
+                    RowBox[{"0.21650635094610965`", " ", 
+                    SqrtBox[
+                    RowBox[{
+                    RowBox[{"-", "5.`"}], "+", 
+                    RowBox[{"24.`", " ", "x1\[Alpha]"}], "-", 
+                    RowBox[{"16.`", " ", 
+                    SuperscriptBox["x1\[Alpha]", "2"]}]}]]}]}], "<", 
+                    "x1\[Beta]", "<", "1.`"}]}], ")"}], "||", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"0.5`", "<", "x1\[Alpha]", "<", "1.`"}], "&&", 
+                    RowBox[{"0", "<", "x1\[Beta]", "<", 
+                    RowBox[{
+                    RowBox[{"0.125`", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"9.`", "\[VeryThinSpace]"}], "-", 
+                    RowBox[{"4.`", " ", "x1\[Alpha]"}]}], ")"}]}], "-", 
+                    RowBox[{"0.21650635094610965`", " ", 
+                    SqrtBox[
+                    RowBox[{
+                    RowBox[{"-", "5.`"}], "+", 
+                    RowBox[{"24.`", " ", "x1\[Alpha]"}], "-", 
+                    RowBox[{"16.`", " ", 
+                    SuperscriptBox["x1\[Alpha]", "2"]}]}]]}]}]}]}], ")"}], 
+                 "||", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"0.5`", "<", "x1\[Alpha]", "<", "1.`"}], "&&", 
+                    RowBox[{"x1\[Alpha]", "<", "x1\[Beta]", "<", "1.`"}]}], 
+                   ")"}], "||", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"0.5`", "<", "x1\[Alpha]", "<", "1.`"}], "&&", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"0.125`", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"9.`", "\[VeryThinSpace]"}], "-", 
+                    RowBox[{"4.`", " ", "x1\[Alpha]"}]}], ")"}]}], "-", 
+                    RowBox[{"0.21650635094610965`", " ", 
+                    SqrtBox[
+                    RowBox[{
+                    RowBox[{"-", "5.`"}], "+", 
+                    RowBox[{"24.`", " ", "x1\[Alpha]"}], "-", 
+                    RowBox[{"16.`", " ", 
+                    SuperscriptBox["x1\[Alpha]", "2"]}]}]]}]}], "<", 
+                    "x1\[Beta]", "<", "x1\[Alpha]"}]}], ")"}], "||", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"x1\[Alpha]", "<", "0"}], "&&", 
+                    RowBox[{"x1\[Alpha]", "<", "x1\[Beta]", "<", "0"}]}], 
+                   ")"}], "||", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"x1\[Alpha]", "<", "0"}], "&&", 
+                    RowBox[{"x1\[Beta]", "<", "x1\[Alpha]"}]}], ")"}]}], 
+               Short[#, 7]& ]], Annotation[#, 
+              Short[
+               Or[
+                
+                And[$CellContext`x1\[Alpha] > 
+                 1., $CellContext`x1\[Beta] > $CellContext`x1\[Alpha]], 
+                And[$CellContext`x1\[Alpha] > 1., 
+                 Inequality[
+                 1., Less, $CellContext`x1\[Beta], 
+                  Less, $CellContext`x1\[Alpha]]], 
+                And[
+                 Inequality[
+                 0, Less, $CellContext`x1\[Alpha], LessEqual, 0.25], 
+                 Inequality[
+                 0, Less, $CellContext`x1\[Beta], 
+                  Less, $CellContext`x1\[Alpha]]], 
+                And[
+                 Inequality[
+                 0, Less, $CellContext`x1\[Alpha], LessEqual, 0.25], 
+                 
+                 Inequality[$CellContext`x1\[Alpha], 
+                  Less, $CellContext`x1\[Beta], Less, 1.]], 
+                And[
+                 Inequality[0.25, Less, $CellContext`x1\[Alpha], Less, 0.5], 
+                 Inequality[
+                 0, Less, $CellContext`x1\[Beta], 
+                  Less, $CellContext`x1\[Alpha]]], 
+                And[
+                 Inequality[0.25, Less, $CellContext`x1\[Alpha], Less, 0.5], 
+                 
+                 Inequality[$CellContext`x1\[Alpha], 
+                  Less, $CellContext`x1\[Beta], Less, 
+                  0.125 (9. - 4. $CellContext`x1\[Alpha]) - 
+                  0.21650635094610965` (-5. + 24. $CellContext`x1\[Alpha] - 
+                    16. $CellContext`x1\[Alpha]^2)^Rational[1, 2]]], 
+                And[
+                 Inequality[0.25, Less, $CellContext`x1\[Alpha], Less, 0.5], 
+                 Inequality[
+                 0.125 (9. - 4. $CellContext`x1\[Alpha]) - 
+                  0.21650635094610965` (-5. + 24. $CellContext`x1\[Alpha] - 
+                    16. $CellContext`x1\[Alpha]^2)^Rational[1, 2], 
+                  Less, $CellContext`x1\[Beta], Less, 1.]], 
+                And[
+                 Inequality[0.5, Less, $CellContext`x1\[Alpha], Less, 1.], 
+                 Inequality[
+                 0, Less, $CellContext`x1\[Beta], Less, 
+                  0.125 (9. - 4. $CellContext`x1\[Alpha]) - 
+                  0.21650635094610965` (-5. + 24. $CellContext`x1\[Alpha] - 
+                    16. $CellContext`x1\[Alpha]^2)^Rational[1, 2]]], 
+                And[
+                 Inequality[0.5, Less, $CellContext`x1\[Alpha], Less, 1.], 
+                 
+                 Inequality[$CellContext`x1\[Alpha], 
+                  Less, $CellContext`x1\[Beta], Less, 1.]], 
+                And[
+                 Inequality[0.5, Less, $CellContext`x1\[Alpha], Less, 1.], 
+                 Inequality[
+                 0.125 (9. - 4. $CellContext`x1\[Alpha]) - 
+                  0.21650635094610965` (-5. + 24. $CellContext`x1\[Alpha] - 
+                    16. $CellContext`x1\[Alpha]^2)^Rational[1, 2], 
+                  Less, $CellContext`x1\[Beta], 
+                  Less, $CellContext`x1\[Alpha]]], 
+                And[$CellContext`x1\[Alpha] < 0, 
+                 
+                 Inequality[$CellContext`x1\[Alpha], 
+                  Less, $CellContext`x1\[Beta], Less, 0]], 
+                
+                And[$CellContext`x1\[Alpha] < 
+                 0, $CellContext`x1\[Beta] < $CellContext`x1\[Alpha]]], 7], 
+              "Tooltip"]& ], "IconizedCustomName", StripOnInput -> False], 
+           GridBox[{{
+              RowBox[{
+                TagBox["\"Head: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+                TagBox["Or", "IconizedItem"]}]}, {
+              RowBox[{
+                TagBox["\"Byte count: \"", "IconizedLabel"], 
+                "\[InvisibleSpace]", 
+                TagBox["6040", "IconizedItem"]}]}}, 
+            GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+            "Column", 
+            GridBoxItemSize -> {
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+           Dynamic[Typeset`open]}, "IconizedObject"]], 
+        Or[
+         And[$CellContext`x1\[Alpha] > 
+          1., $CellContext`x1\[Beta] > $CellContext`x1\[Alpha]], 
+         And[$CellContext`x1\[Alpha] > 1., 
+          Inequality[
+          1., Less, $CellContext`x1\[Beta], Less, $CellContext`x1\[Alpha]]], 
+         And[
+          Inequality[0, Less, $CellContext`x1\[Alpha], LessEqual, 0.25], 
+          Inequality[
+          0, Less, $CellContext`x1\[Beta], Less, $CellContext`x1\[Alpha]]], 
+         And[
+          Inequality[0, Less, $CellContext`x1\[Alpha], LessEqual, 0.25], 
+          
+          Inequality[$CellContext`x1\[Alpha], Less, $CellContext`x1\[Beta], 
+           Less, 1.]], 
+         And[
+          Inequality[0.25, Less, $CellContext`x1\[Alpha], Less, 0.5], 
+          Inequality[
+          0, Less, $CellContext`x1\[Beta], Less, $CellContext`x1\[Alpha]]], 
+         And[
+          Inequality[0.25, Less, $CellContext`x1\[Alpha], Less, 0.5], 
+          
+          Inequality[$CellContext`x1\[Alpha], Less, $CellContext`x1\[Beta], 
+           Less, 0.125 (9. - 4. $CellContext`x1\[Alpha]) - 
+           0.21650635094610965` (-5. + 24. $CellContext`x1\[Alpha] - 
+             16. $CellContext`x1\[Alpha]^2)^Rational[1, 2]]], 
+         And[
+          Inequality[0.25, Less, $CellContext`x1\[Alpha], Less, 0.5], 
+          Inequality[
+          0.125 (9. - 4. $CellContext`x1\[Alpha]) - 
+           0.21650635094610965` (-5. + 24. $CellContext`x1\[Alpha] - 
+             16. $CellContext`x1\[Alpha]^2)^Rational[1, 2], 
+           Less, $CellContext`x1\[Beta], Less, 1.]], 
+         And[
+          Inequality[0.5, Less, $CellContext`x1\[Alpha], Less, 1.], 
+          Inequality[
+          0, Less, $CellContext`x1\[Beta], Less, 
+           0.125 (9. - 4. $CellContext`x1\[Alpha]) - 
+           0.21650635094610965` (-5. + 24. $CellContext`x1\[Alpha] - 
+             16. $CellContext`x1\[Alpha]^2)^Rational[1, 2]]], 
+         And[
+          Inequality[0.5, Less, $CellContext`x1\[Alpha], Less, 1.], 
+          
+          Inequality[$CellContext`x1\[Alpha], Less, $CellContext`x1\[Beta], 
+           Less, 1.]], 
+         And[
+          Inequality[0.5, Less, $CellContext`x1\[Alpha], Less, 1.], 
+          Inequality[
+          0.125 (9. - 4. $CellContext`x1\[Alpha]) - 
+           0.21650635094610965` (-5. + 24. $CellContext`x1\[Alpha] - 
+             16. $CellContext`x1\[Alpha]^2)^Rational[1, 2], 
+           Less, $CellContext`x1\[Beta], Less, $CellContext`x1\[Alpha]]], 
+         And[$CellContext`x1\[Alpha] < 0, 
+          
+          Inequality[$CellContext`x1\[Alpha], Less, $CellContext`x1\[Beta], 
+           Less, 0]], 
+         And[$CellContext`x1\[Alpha] < 
+          0, $CellContext`x1\[Beta] < $CellContext`x1\[Alpha]]], 
+        SelectWithContents -> True, Selectable -> False]},
+      "ConditionalExpression"]}], ",", 
+    RowBox[{"B", "\[Rule]", 
+     TemplateBox[{
+       FractionBox[
+        RowBox[{
+          RowBox[{"Log", "[", 
+            FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}], "+", 
+          FractionBox[
+           RowBox[{"2.`", " ", "x1\[Alpha]", " ", 
+             RowBox[{"(", 
+               RowBox[{
+                 RowBox[{"6.`", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "-", 
+                 RowBox[{"9.`", " ", "x1\[Alpha]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+                 RowBox[{"4.`", " ", 
+                   SuperscriptBox["x1\[Alpha]", "2"], " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "-", 
+                 RowBox[{"9.`", " ", "x1\[Beta]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+                 RowBox[{"4.`", " ", "x1\[Alpha]", " ", "x1\[Beta]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+                 RowBox[{"4.`", " ", 
+                   SuperscriptBox["x1\[Beta]", "2"], " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+                 RowBox[{"3.`", " ", "x1\[Alpha]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+                 RowBox[{"4.`", " ", 
+                   SuperscriptBox["x1\[Alpha]", "2"], " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "+", 
+                 RowBox[{"3.`", " ", "x1\[Beta]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+                 RowBox[{"4.`", " ", "x1\[Alpha]", " ", "x1\[Beta]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+                 RowBox[{"4.`", " ", 
+                   SuperscriptBox["x1\[Beta]", "2"], " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}]}], 
+               ")"}]}], 
+           RowBox[{
+             RowBox[{"2.`", " ", 
+               SuperscriptBox["x1\[Alpha]", "3"]}], "-", 
+             RowBox[{"6.`", " ", 
+               SuperscriptBox["x1\[Alpha]", "2"], " ", "x1\[Beta]"}], "+", 
+             RowBox[{"6.`", " ", "x1\[Alpha]", " ", 
+               SuperscriptBox["x1\[Beta]", "2"]}], "-", 
+             RowBox[{"2.`", " ", 
+               SuperscriptBox["x1\[Beta]", "3"]}]}]], "-", 
+          FractionBox[
+           RowBox[{"1.`", " ", 
+             SuperscriptBox["x1\[Alpha]", "2"], " ", 
+             RowBox[{"(", 
+               RowBox[{
+                 RowBox[{"6.`", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "-", 
+                 RowBox[{"9.`", " ", "x1\[Alpha]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+                 RowBox[{"4.`", " ", 
+                   SuperscriptBox["x1\[Alpha]", "2"], " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "-", 
+                 RowBox[{"9.`", " ", "x1\[Beta]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+                 RowBox[{"4.`", " ", "x1\[Alpha]", " ", "x1\[Beta]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+                 RowBox[{"4.`", " ", 
+                   SuperscriptBox["x1\[Beta]", "2"], " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+                 RowBox[{"3.`", " ", "x1\[Alpha]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+                 RowBox[{"4.`", " ", 
+                   SuperscriptBox["x1\[Alpha]", "2"], " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "+", 
+                 RowBox[{"3.`", " ", "x1\[Beta]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+                 RowBox[{"4.`", " ", "x1\[Alpha]", " ", "x1\[Beta]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+                 RowBox[{"4.`", " ", 
+                   SuperscriptBox["x1\[Beta]", "2"], " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}]}], 
+               ")"}]}], 
+           RowBox[{
+             RowBox[{"2.`", " ", 
+               SuperscriptBox["x1\[Alpha]", "3"]}], "-", 
+             RowBox[{"6.`", " ", 
+               SuperscriptBox["x1\[Alpha]", "2"], " ", "x1\[Beta]"}], "+", 
+             RowBox[{"6.`", " ", "x1\[Alpha]", " ", 
+               SuperscriptBox["x1\[Beta]", "2"]}], "-", 
+             RowBox[{"2.`", " ", 
+               SuperscriptBox["x1\[Beta]", "3"]}]}]], "-", 
+          FractionBox[
+           RowBox[{"2.`", " ", "x1\[Beta]", " ", 
+             RowBox[{"(", 
+               RowBox[{
+                 RowBox[{"6.`", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "-", 
+                 RowBox[{"9.`", " ", "x1\[Alpha]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+                 RowBox[{"4.`", " ", 
+                   SuperscriptBox["x1\[Alpha]", "2"], " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "-", 
+                 RowBox[{"9.`", " ", "x1\[Beta]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+                 RowBox[{"4.`", " ", "x1\[Alpha]", " ", "x1\[Beta]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+                 RowBox[{"4.`", " ", 
+                   SuperscriptBox["x1\[Beta]", "2"], " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+                 RowBox[{"3.`", " ", "x1\[Alpha]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+                 RowBox[{"4.`", " ", 
+                   SuperscriptBox["x1\[Alpha]", "2"], " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "+", 
+                 RowBox[{"3.`", " ", "x1\[Beta]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+                 RowBox[{"4.`", " ", "x1\[Alpha]", " ", "x1\[Beta]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+                 RowBox[{"4.`", " ", 
+                   SuperscriptBox["x1\[Beta]", "2"], " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}]}], 
+               ")"}]}], 
+           RowBox[{
+             RowBox[{"2.`", " ", 
+               SuperscriptBox["x1\[Alpha]", "3"]}], "-", 
+             RowBox[{"6.`", " ", 
+               SuperscriptBox["x1\[Alpha]", "2"], " ", "x1\[Beta]"}], "+", 
+             RowBox[{"6.`", " ", "x1\[Alpha]", " ", 
+               SuperscriptBox["x1\[Beta]", "2"]}], "-", 
+             RowBox[{"2.`", " ", 
+               SuperscriptBox["x1\[Beta]", "3"]}]}]], "+", 
+          FractionBox[
+           RowBox[{
+             SuperscriptBox["x1\[Beta]", "2"], " ", 
+             RowBox[{"(", 
+               RowBox[{
+                 RowBox[{"6.`", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "-", 
+                 RowBox[{"9.`", " ", "x1\[Alpha]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+                 RowBox[{"4.`", " ", 
+                   SuperscriptBox["x1\[Alpha]", "2"], " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "-", 
+                 RowBox[{"9.`", " ", "x1\[Beta]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+                 RowBox[{"4.`", " ", "x1\[Alpha]", " ", "x1\[Beta]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+                 RowBox[{"4.`", " ", 
+                   SuperscriptBox["x1\[Beta]", "2"], " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox[
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                    RowBox[{
+                    RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+                 RowBox[{"3.`", " ", "x1\[Alpha]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+                 RowBox[{"4.`", " ", 
+                   SuperscriptBox["x1\[Alpha]", "2"], " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "+", 
+                 RowBox[{"3.`", " ", "x1\[Beta]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+                 RowBox[{"4.`", " ", "x1\[Alpha]", " ", "x1\[Beta]", " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+                 RowBox[{"4.`", " ", 
+                   SuperscriptBox["x1\[Beta]", "2"], " ", 
+                   RowBox[{"Log", "[", 
+                    FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}]}], 
+               ")"}]}], 
+           RowBox[{
+             RowBox[{"2.`", " ", 
+               SuperscriptBox["x1\[Alpha]", "3"]}], "-", 
+             RowBox[{"6.`", " ", 
+               SuperscriptBox["x1\[Alpha]", "2"], " ", "x1\[Beta]"}], "+", 
+             RowBox[{"6.`", " ", "x1\[Alpha]", " ", 
+               SuperscriptBox["x1\[Beta]", "2"]}], "-", 
+             RowBox[{"2.`", " ", 
+               SuperscriptBox["x1\[Beta]", "3"]}]}]]}], 
+        RowBox[{
+          RowBox[{"6.`", " ", "x1\[Alpha]"}], "-", 
+          RowBox[{"9.`", " ", 
+            SuperscriptBox["x1\[Alpha]", "2"]}], "+", 
+          RowBox[{"4.`", " ", 
+            SuperscriptBox["x1\[Alpha]", "3"]}], "-", 
+          RowBox[{"6.`", " ", "x1\[Beta]"}], "+", 
+          RowBox[{"9.`", " ", 
+            SuperscriptBox["x1\[Beta]", "2"]}], "-", 
+          RowBox[{"4.`", " ", 
+            SuperscriptBox["x1\[Beta]", "3"]}]}]], 
+       InterpretationBox[
+        DynamicModuleBox[{Typeset`open = False}, 
+         TemplateBox[{"Expression", 
+           StyleBox[
+            TagBox[
+             TooltipBox["\"condition\"", 
+              TagBox[
+               RowBox[{
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"x1\[Alpha]", ">", "1.`"}], "&&", 
+                    RowBox[{"x1\[Beta]", ">", "x1\[Alpha]"}]}], ")"}], "||", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"x1\[Alpha]", ">", "1.`"}], "&&", 
+                    RowBox[{"1.`", "<", "x1\[Beta]", "<", "x1\[Alpha]"}]}], 
+                   ")"}], "||", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"0", "<", "x1\[Alpha]", "\[LessEqual]", "0.25`"}],
+                     "&&", 
+                    RowBox[{"0", "<", "x1\[Beta]", "<", "x1\[Alpha]"}]}], 
+                   ")"}], "||", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"0", "<", "x1\[Alpha]", "\[LessEqual]", "0.25`"}],
+                     "&&", 
+                    RowBox[{"x1\[Alpha]", "<", "x1\[Beta]", "<", "1.`"}]}], 
+                   ")"}], "||", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"0.25`", "<", "x1\[Alpha]", "<", "0.5`"}], "&&", 
+                    RowBox[{"0", "<", "x1\[Beta]", "<", "x1\[Alpha]"}]}], 
+                   ")"}], "||", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"0.25`", "<", "x1\[Alpha]", "<", "0.5`"}], "&&", 
+                    RowBox[{"x1\[Alpha]", "<", "x1\[Beta]", "<", 
+                    RowBox[{
+                    RowBox[{"0.125`", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"9.`", "\[VeryThinSpace]"}], "-", 
+                    RowBox[{"4.`", " ", "x1\[Alpha]"}]}], ")"}]}], "-", 
+                    RowBox[{"0.21650635094610965`", " ", 
+                    SqrtBox[
+                    RowBox[{
+                    RowBox[{"-", "5.`"}], "+", 
+                    RowBox[{"24.`", " ", "x1\[Alpha]"}], "-", 
+                    RowBox[{"16.`", " ", 
+                    SuperscriptBox["x1\[Alpha]", "2"]}]}]]}]}]}]}], ")"}], 
+                 "||", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"0.25`", "<", "x1\[Alpha]", "<", "0.5`"}], "&&", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"0.125`", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"9.`", "\[VeryThinSpace]"}], "-", 
+                    RowBox[{"4.`", " ", "x1\[Alpha]"}]}], ")"}]}], "-", 
+                    RowBox[{"0.21650635094610965`", " ", 
+                    SqrtBox[
+                    RowBox[{
+                    RowBox[{"-", "5.`"}], "+", 
+                    RowBox[{"24.`", " ", "x1\[Alpha]"}], "-", 
+                    RowBox[{"16.`", " ", 
+                    SuperscriptBox["x1\[Alpha]", "2"]}]}]]}]}], "<", 
+                    "x1\[Beta]", "<", "1.`"}]}], ")"}], "||", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"0.5`", "<", "x1\[Alpha]", "<", "1.`"}], "&&", 
+                    RowBox[{"0", "<", "x1\[Beta]", "<", 
+                    RowBox[{
+                    RowBox[{"0.125`", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"9.`", "\[VeryThinSpace]"}], "-", 
+                    RowBox[{"4.`", " ", "x1\[Alpha]"}]}], ")"}]}], "-", 
+                    RowBox[{"0.21650635094610965`", " ", 
+                    SqrtBox[
+                    RowBox[{
+                    RowBox[{"-", "5.`"}], "+", 
+                    RowBox[{"24.`", " ", "x1\[Alpha]"}], "-", 
+                    RowBox[{"16.`", " ", 
+                    SuperscriptBox["x1\[Alpha]", "2"]}]}]]}]}]}]}], ")"}], 
+                 "||", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"0.5`", "<", "x1\[Alpha]", "<", "1.`"}], "&&", 
+                    RowBox[{"x1\[Alpha]", "<", "x1\[Beta]", "<", "1.`"}]}], 
+                   ")"}], "||", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"0.5`", "<", "x1\[Alpha]", "<", "1.`"}], "&&", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"0.125`", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"9.`", "\[VeryThinSpace]"}], "-", 
+                    RowBox[{"4.`", " ", "x1\[Alpha]"}]}], ")"}]}], "-", 
+                    RowBox[{"0.21650635094610965`", " ", 
+                    SqrtBox[
+                    RowBox[{
+                    RowBox[{"-", "5.`"}], "+", 
+                    RowBox[{"24.`", " ", "x1\[Alpha]"}], "-", 
+                    RowBox[{"16.`", " ", 
+                    SuperscriptBox["x1\[Alpha]", "2"]}]}]]}]}], "<", 
+                    "x1\[Beta]", "<", "x1\[Alpha]"}]}], ")"}], "||", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"x1\[Alpha]", "<", "0"}], "&&", 
+                    RowBox[{"x1\[Alpha]", "<", "x1\[Beta]", "<", "0"}]}], 
+                   ")"}], "||", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"x1\[Alpha]", "<", "0"}], "&&", 
+                    RowBox[{"x1\[Beta]", "<", "x1\[Alpha]"}]}], ")"}]}], 
+               Short[#, 7]& ]], Annotation[#, 
+              Short[
+               Or[
+                
+                And[$CellContext`x1\[Alpha] > 
+                 1., $CellContext`x1\[Beta] > $CellContext`x1\[Alpha]], 
+                And[$CellContext`x1\[Alpha] > 1., 
+                 Inequality[
+                 1., Less, $CellContext`x1\[Beta], 
+                  Less, $CellContext`x1\[Alpha]]], 
+                And[
+                 Inequality[
+                 0, Less, $CellContext`x1\[Alpha], LessEqual, 0.25], 
+                 Inequality[
+                 0, Less, $CellContext`x1\[Beta], 
+                  Less, $CellContext`x1\[Alpha]]], 
+                And[
+                 Inequality[
+                 0, Less, $CellContext`x1\[Alpha], LessEqual, 0.25], 
+                 
+                 Inequality[$CellContext`x1\[Alpha], 
+                  Less, $CellContext`x1\[Beta], Less, 1.]], 
+                And[
+                 Inequality[0.25, Less, $CellContext`x1\[Alpha], Less, 0.5], 
+                 Inequality[
+                 0, Less, $CellContext`x1\[Beta], 
+                  Less, $CellContext`x1\[Alpha]]], 
+                And[
+                 Inequality[0.25, Less, $CellContext`x1\[Alpha], Less, 0.5], 
+                 
+                 Inequality[$CellContext`x1\[Alpha], 
+                  Less, $CellContext`x1\[Beta], Less, 
+                  0.125 (9. - 4. $CellContext`x1\[Alpha]) - 
+                  0.21650635094610965` (-5. + 24. $CellContext`x1\[Alpha] - 
+                    16. $CellContext`x1\[Alpha]^2)^Rational[1, 2]]], 
+                And[
+                 Inequality[0.25, Less, $CellContext`x1\[Alpha], Less, 0.5], 
+                 Inequality[
+                 0.125 (9. - 4. $CellContext`x1\[Alpha]) - 
+                  0.21650635094610965` (-5. + 24. $CellContext`x1\[Alpha] - 
+                    16. $CellContext`x1\[Alpha]^2)^Rational[1, 2], 
+                  Less, $CellContext`x1\[Beta], Less, 1.]], 
+                And[
+                 Inequality[0.5, Less, $CellContext`x1\[Alpha], Less, 1.], 
+                 Inequality[
+                 0, Less, $CellContext`x1\[Beta], Less, 
+                  0.125 (9. - 4. $CellContext`x1\[Alpha]) - 
+                  0.21650635094610965` (-5. + 24. $CellContext`x1\[Alpha] - 
+                    16. $CellContext`x1\[Alpha]^2)^Rational[1, 2]]], 
+                And[
+                 Inequality[0.5, Less, $CellContext`x1\[Alpha], Less, 1.], 
+                 
+                 Inequality[$CellContext`x1\[Alpha], 
+                  Less, $CellContext`x1\[Beta], Less, 1.]], 
+                And[
+                 Inequality[0.5, Less, $CellContext`x1\[Alpha], Less, 1.], 
+                 Inequality[
+                 0.125 (9. - 4. $CellContext`x1\[Alpha]) - 
+                  0.21650635094610965` (-5. + 24. $CellContext`x1\[Alpha] - 
+                    16. $CellContext`x1\[Alpha]^2)^Rational[1, 2], 
+                  Less, $CellContext`x1\[Beta], 
+                  Less, $CellContext`x1\[Alpha]]], 
+                And[$CellContext`x1\[Alpha] < 0, 
+                 
+                 Inequality[$CellContext`x1\[Alpha], 
+                  Less, $CellContext`x1\[Beta], Less, 0]], 
+                
+                And[$CellContext`x1\[Alpha] < 
+                 0, $CellContext`x1\[Beta] < $CellContext`x1\[Alpha]]], 7], 
+              "Tooltip"]& ], "IconizedCustomName", StripOnInput -> False], 
+           GridBox[{{
+              RowBox[{
+                TagBox["\"Head: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+                TagBox["Or", "IconizedItem"]}]}, {
+              RowBox[{
+                TagBox["\"Byte count: \"", "IconizedLabel"], 
+                "\[InvisibleSpace]", 
+                TagBox["6040", "IconizedItem"]}]}}, 
+            GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+            "Column", 
+            GridBoxItemSize -> {
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+           Dynamic[Typeset`open]}, "IconizedObject"]], 
+        Or[
+         And[$CellContext`x1\[Alpha] > 
+          1., $CellContext`x1\[Beta] > $CellContext`x1\[Alpha]], 
+         And[$CellContext`x1\[Alpha] > 1., 
+          Inequality[
+          1., Less, $CellContext`x1\[Beta], Less, $CellContext`x1\[Alpha]]], 
+         And[
+          Inequality[0, Less, $CellContext`x1\[Alpha], LessEqual, 0.25], 
+          Inequality[
+          0, Less, $CellContext`x1\[Beta], Less, $CellContext`x1\[Alpha]]], 
+         And[
+          Inequality[0, Less, $CellContext`x1\[Alpha], LessEqual, 0.25], 
+          
+          Inequality[$CellContext`x1\[Alpha], Less, $CellContext`x1\[Beta], 
+           Less, 1.]], 
+         And[
+          Inequality[0.25, Less, $CellContext`x1\[Alpha], Less, 0.5], 
+          Inequality[
+          0, Less, $CellContext`x1\[Beta], Less, $CellContext`x1\[Alpha]]], 
+         And[
+          Inequality[0.25, Less, $CellContext`x1\[Alpha], Less, 0.5], 
+          
+          Inequality[$CellContext`x1\[Alpha], Less, $CellContext`x1\[Beta], 
+           Less, 0.125 (9. - 4. $CellContext`x1\[Alpha]) - 
+           0.21650635094610965` (-5. + 24. $CellContext`x1\[Alpha] - 
+             16. $CellContext`x1\[Alpha]^2)^Rational[1, 2]]], 
+         And[
+          Inequality[0.25, Less, $CellContext`x1\[Alpha], Less, 0.5], 
+          Inequality[
+          0.125 (9. - 4. $CellContext`x1\[Alpha]) - 
+           0.21650635094610965` (-5. + 24. $CellContext`x1\[Alpha] - 
+             16. $CellContext`x1\[Alpha]^2)^Rational[1, 2], 
+           Less, $CellContext`x1\[Beta], Less, 1.]], 
+         And[
+          Inequality[0.5, Less, $CellContext`x1\[Alpha], Less, 1.], 
+          Inequality[
+          0, Less, $CellContext`x1\[Beta], Less, 
+           0.125 (9. - 4. $CellContext`x1\[Alpha]) - 
+           0.21650635094610965` (-5. + 24. $CellContext`x1\[Alpha] - 
+             16. $CellContext`x1\[Alpha]^2)^Rational[1, 2]]], 
+         And[
+          Inequality[0.5, Less, $CellContext`x1\[Alpha], Less, 1.], 
+          
+          Inequality[$CellContext`x1\[Alpha], Less, $CellContext`x1\[Beta], 
+           Less, 1.]], 
+         And[
+          Inequality[0.5, Less, $CellContext`x1\[Alpha], Less, 1.], 
+          Inequality[
+          0.125 (9. - 4. $CellContext`x1\[Alpha]) - 
+           0.21650635094610965` (-5. + 24. $CellContext`x1\[Alpha] - 
+             16. $CellContext`x1\[Alpha]^2)^Rational[1, 2], 
+           Less, $CellContext`x1\[Beta], Less, $CellContext`x1\[Alpha]]], 
+         And[$CellContext`x1\[Alpha] < 0, 
+          
+          Inequality[$CellContext`x1\[Alpha], Less, $CellContext`x1\[Beta], 
+           Less, 0]], 
+         And[$CellContext`x1\[Alpha] < 
+          0, $CellContext`x1\[Beta] < $CellContext`x1\[Alpha]]], 
+        SelectWithContents -> True, Selectable -> False]},
+      "ConditionalExpression"]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.813438321797537*^9, 3.8134383265864706`*^9}, 
+   3.8134383998684773`*^9, {3.813438462125705*^9, 3.8134384748446503`*^9}, {
+   3.8134386011607237`*^9, 3.8134386066908455`*^9}, 3.81343875450097*^9},
+ CellLabel->"Out[23]=",ExpressionUUID->"b62c11e3-9ecb-4ae8-b74c-013760131c1c"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"NSolve", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"2.5", "\[Equal]", " ", 
+       RowBox[{
+        FractionBox["1", 
+         RowBox[{
+          RowBox[{"2.`", " ", 
+           SuperscriptBox["x1\[Alpha]", "3"]}], "-", 
+          RowBox[{"6.`", " ", 
+           SuperscriptBox["x1\[Alpha]", "2"], " ", "x1\[Beta]"}], "+", 
+          RowBox[{"6.`", " ", "x1\[Alpha]", " ", 
+           SuperscriptBox["x1\[Beta]", "2"]}], "-", 
+          RowBox[{"2.`", " ", 
+           SuperscriptBox["x1\[Beta]", "3"]}]}]], 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"6.`", " ", 
+           RowBox[{"Log", "[", 
+            FractionBox[
+             RowBox[{
+              RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+             RowBox[{
+              RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "-", 
+          RowBox[{"9.`", " ", "x1\[Alpha]", " ", 
+           RowBox[{"Log", "[", 
+            FractionBox[
+             RowBox[{
+              RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+             RowBox[{
+              RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+          RowBox[{"4.`", " ", 
+           SuperscriptBox["x1\[Alpha]", "2"], " ", 
+           RowBox[{"Log", "[", 
+            FractionBox[
+             RowBox[{
+              RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+             RowBox[{
+              RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "-", 
+          RowBox[{"9.`", " ", "x1\[Beta]", " ", 
+           RowBox[{"Log", "[", 
+            FractionBox[
+             RowBox[{
+              RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+             RowBox[{
+              RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+          RowBox[{"4.`", " ", "x1\[Alpha]", " ", "x1\[Beta]", " ", 
+           RowBox[{"Log", "[", 
+            FractionBox[
+             RowBox[{
+              RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+             RowBox[{
+              RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+          RowBox[{"4.`", " ", 
+           SuperscriptBox["x1\[Beta]", "2"], " ", 
+           RowBox[{"Log", "[", 
+            FractionBox[
+             RowBox[{
+              RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+             RowBox[{
+              RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+          RowBox[{"3.`", " ", "x1\[Alpha]", " ", 
+           RowBox[{"Log", "[", 
+            FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+          RowBox[{"4.`", " ", 
+           SuperscriptBox["x1\[Alpha]", "2"], " ", 
+           RowBox[{"Log", "[", 
+            FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "+", 
+          RowBox[{"3.`", " ", "x1\[Beta]", " ", 
+           RowBox[{"Log", "[", 
+            FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+          RowBox[{"4.`", " ", "x1\[Alpha]", " ", "x1\[Beta]", " ", 
+           RowBox[{"Log", "[", 
+            FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+          RowBox[{"4.`", " ", 
+           SuperscriptBox["x1\[Beta]", "2"], " ", 
+           RowBox[{"Log", "[", 
+            FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}]}], ")"}]}]}], ",", 
+      RowBox[{"0.5", "==", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"Log", "[", 
+           FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}], "+", 
+          RowBox[{
+           FractionBox["1", 
+            RowBox[{
+             RowBox[{"2.`", " ", 
+              SuperscriptBox["x1\[Alpha]", "3"]}], "-", 
+             RowBox[{"6.`", " ", 
+              SuperscriptBox["x1\[Alpha]", "2"], " ", "x1\[Beta]"}], "+", 
+             RowBox[{"6.`", " ", "x1\[Alpha]", " ", 
+              SuperscriptBox["x1\[Beta]", "2"]}], "-", 
+             RowBox[{"2.`", " ", 
+              SuperscriptBox["x1\[Beta]", "3"]}]}]], "2.`", " ", "x1\[Alpha]",
+            " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"6.`", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "-", 
+             RowBox[{"9.`", " ", "x1\[Alpha]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+             RowBox[{"4.`", " ", 
+              SuperscriptBox["x1\[Alpha]", "2"], " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "-", 
+             RowBox[{"9.`", " ", "x1\[Beta]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+             RowBox[{"4.`", " ", "x1\[Alpha]", " ", "x1\[Beta]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+             RowBox[{"4.`", " ", 
+              SuperscriptBox["x1\[Beta]", "2"], " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+             RowBox[{"3.`", " ", "x1\[Alpha]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+             RowBox[{"4.`", " ", 
+              SuperscriptBox["x1\[Alpha]", "2"], " ", 
+              RowBox[{"Log", "[", 
+               FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "+", 
+             RowBox[{"3.`", " ", "x1\[Beta]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+             RowBox[{"4.`", " ", "x1\[Alpha]", " ", "x1\[Beta]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+             RowBox[{"4.`", " ", 
+              SuperscriptBox["x1\[Beta]", "2"], " ", 
+              RowBox[{"Log", "[", 
+               FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}]}], ")"}]}], 
+          "-", 
+          RowBox[{
+           FractionBox["1", 
+            RowBox[{
+             RowBox[{"2.`", " ", 
+              SuperscriptBox["x1\[Alpha]", "3"]}], "-", 
+             RowBox[{"6.`", " ", 
+              SuperscriptBox["x1\[Alpha]", "2"], " ", "x1\[Beta]"}], "+", 
+             RowBox[{"6.`", " ", "x1\[Alpha]", " ", 
+              SuperscriptBox["x1\[Beta]", "2"]}], "-", 
+             RowBox[{"2.`", " ", 
+              SuperscriptBox["x1\[Beta]", "3"]}]}]], "1.`", " ", 
+           SuperscriptBox["x1\[Alpha]", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"6.`", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "-", 
+             RowBox[{"9.`", " ", "x1\[Alpha]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+             RowBox[{"4.`", " ", 
+              SuperscriptBox["x1\[Alpha]", "2"], " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "-", 
+             RowBox[{"9.`", " ", "x1\[Beta]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+             RowBox[{"4.`", " ", "x1\[Alpha]", " ", "x1\[Beta]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+             RowBox[{"4.`", " ", 
+              SuperscriptBox["x1\[Beta]", "2"], " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+             RowBox[{"3.`", " ", "x1\[Alpha]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+             RowBox[{"4.`", " ", 
+              SuperscriptBox["x1\[Alpha]", "2"], " ", 
+              RowBox[{"Log", "[", 
+               FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "+", 
+             RowBox[{"3.`", " ", "x1\[Beta]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+             RowBox[{"4.`", " ", "x1\[Alpha]", " ", "x1\[Beta]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+             RowBox[{"4.`", " ", 
+              SuperscriptBox["x1\[Beta]", "2"], " ", 
+              RowBox[{"Log", "[", 
+               FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}]}], ")"}]}], 
+          "-", 
+          RowBox[{
+           FractionBox["1", 
+            RowBox[{
+             RowBox[{"2.`", " ", 
+              SuperscriptBox["x1\[Alpha]", "3"]}], "-", 
+             RowBox[{"6.`", " ", 
+              SuperscriptBox["x1\[Alpha]", "2"], " ", "x1\[Beta]"}], "+", 
+             RowBox[{"6.`", " ", "x1\[Alpha]", " ", 
+              SuperscriptBox["x1\[Beta]", "2"]}], "-", 
+             RowBox[{"2.`", " ", 
+              SuperscriptBox["x1\[Beta]", "3"]}]}]], "2.`", " ", "x1\[Beta]", 
+           " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"6.`", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "-", 
+             RowBox[{"9.`", " ", "x1\[Alpha]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+             RowBox[{"4.`", " ", 
+              SuperscriptBox["x1\[Alpha]", "2"], " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "-", 
+             RowBox[{"9.`", " ", "x1\[Beta]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+             RowBox[{"4.`", " ", "x1\[Alpha]", " ", "x1\[Beta]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+             RowBox[{"4.`", " ", 
+              SuperscriptBox["x1\[Beta]", "2"], " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+             RowBox[{"3.`", " ", "x1\[Alpha]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+             RowBox[{"4.`", " ", 
+              SuperscriptBox["x1\[Alpha]", "2"], " ", 
+              RowBox[{"Log", "[", 
+               FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "+", 
+             RowBox[{"3.`", " ", "x1\[Beta]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+             RowBox[{"4.`", " ", "x1\[Alpha]", " ", "x1\[Beta]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+             RowBox[{"4.`", " ", 
+              SuperscriptBox["x1\[Beta]", "2"], " ", 
+              RowBox[{"Log", "[", 
+               FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}]}], ")"}]}], 
+          "+", 
+          RowBox[{
+           FractionBox["1", 
+            RowBox[{
+             RowBox[{"2.`", " ", 
+              SuperscriptBox["x1\[Alpha]", "3"]}], "-", 
+             RowBox[{"6.`", " ", 
+              SuperscriptBox["x1\[Alpha]", "2"], " ", "x1\[Beta]"}], "+", 
+             RowBox[{"6.`", " ", "x1\[Alpha]", " ", 
+              SuperscriptBox["x1\[Beta]", "2"]}], "-", 
+             RowBox[{"2.`", " ", 
+              SuperscriptBox["x1\[Beta]", "3"]}]}]], 
+           SuperscriptBox["x1\[Beta]", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"6.`", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "-", 
+             RowBox[{"9.`", " ", "x1\[Alpha]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+             RowBox[{"4.`", " ", 
+              SuperscriptBox["x1\[Alpha]", "2"], " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "-", 
+             RowBox[{"9.`", " ", "x1\[Beta]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+             RowBox[{"4.`", " ", "x1\[Alpha]", " ", "x1\[Beta]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+             RowBox[{"4.`", " ", 
+              SuperscriptBox["x1\[Beta]", "2"], " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Alpha]"}], 
+                RowBox[{
+                 RowBox[{"-", "1.`"}], "+", "x1\[Beta]"}]], "]"}]}], "+", 
+             RowBox[{"3.`", " ", "x1\[Alpha]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+             RowBox[{"4.`", " ", 
+              SuperscriptBox["x1\[Alpha]", "2"], " ", 
+              RowBox[{"Log", "[", 
+               FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "+", 
+             RowBox[{"3.`", " ", "x1\[Beta]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+             RowBox[{"4.`", " ", "x1\[Alpha]", " ", "x1\[Beta]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}], "-", 
+             RowBox[{"4.`", " ", 
+              SuperscriptBox["x1\[Beta]", "2"], " ", 
+              RowBox[{"Log", "[", 
+               FractionBox["x1\[Alpha]", "x1\[Beta]"], "]"}]}]}], ")"}]}]}], 
+         ")"}], "/", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"6.`", " ", "x1\[Alpha]"}], "-", 
+          RowBox[{"9.`", " ", 
+           SuperscriptBox["x1\[Alpha]", "2"]}], "+", 
+          RowBox[{"4.`", " ", 
+           SuperscriptBox["x1\[Alpha]", "3"]}], "-", 
+          RowBox[{"6.`", " ", "x1\[Beta]"}], "+", 
+          RowBox[{"9.`", " ", 
+           SuperscriptBox["x1\[Beta]", "2"]}], "-", 
+          RowBox[{"4.`", " ", 
+           SuperscriptBox["x1\[Beta]", "3"]}]}], ")"}]}]}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x1\[Alpha]", ",", "x1\[Beta]"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8134387814202576`*^9, 
+  3.8134389444054103`*^9}},ExpressionUUID->"b477b439-4230-4f1f-b7e6-\
+6c973417b991"]
+},
+WindowSize->{1366, 685},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"70e9ff9a-50c1-47b4-aebc-ef7feb7545c4"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2788, 64, 143, "Input",ExpressionUUID->"37704f2c-8812-4e26-b4bc-957619177d34"],
+Cell[3371, 88, 43246, 926, 446, "Output",ExpressionUUID->"b62c11e3-9ecb-4ae8-b74c-013760131c1c"]
+}, Open  ]],
+Cell[46632, 1017, 17525, 407, 719, "Input",ExpressionUUID->"b477b439-4230-4f1f-b7e6-6c973417b991"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
